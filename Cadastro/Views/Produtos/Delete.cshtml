@@ -1,4 +1,4 @@
-﻿@model Cadastro.ViewModels.ClientViewModel
+﻿@model Cadastro.ViewModels.ProdutoViewModel
 
 @{
     ViewData["Title"] = "Delete";
@@ -8,7 +8,7 @@
 
 <h3>Deseja realmente excluir este registro?</h3>
 <div>
-    <h4>Dados do Cliente</h4>
+    <h4>Dados do Produto</h4>
     <hr />
     <dl class="row">
         <dt class = "col-sm-2">
@@ -24,17 +24,11 @@
             @Html.DisplayFor(model => model.Name)
         </dd>
         <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.LastName)
+            @Html.DisplayNameFor(model => model.Preco)
         </dt>
         <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.LastName)
-        </dd>
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.Email)
-        </dt>
-        <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.Email)
-        </dd>
+            @Html.DisplayFor(model => model.Preco)
+        </dd>       
         <dt class = "col-sm-2">
             @Html.DisplayNameFor(model => model.Ative)
         </dt>
