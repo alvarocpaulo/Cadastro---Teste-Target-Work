@@ -7,7 +7,9 @@ namespace Cadastro.Controllers
 {
     public class HomeController : Controller
     {
+#pragma warning disable IDE0052 // Remover membros particulares não lidos
         private readonly ILogger<HomeController> _logger;
+#pragma warning restore IDE0052 // Remover membros particulares não lidos
 
         public HomeController(ILogger<HomeController> logger)
         {

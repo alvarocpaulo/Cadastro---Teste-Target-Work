@@ -8,14 +8,15 @@ namespace Cadastro.ViewModels
 {
     public class ProdutoViewModel
     {
-        
+
+        [Key]
+        [Display(Name = "Código")]
+        [Required(ErrorMessage = "O código é requerido.")]
+        public int Id { get; set; }
+
         [Display(Name = "Nome")]
         [Required(ErrorMessage = "O nome é requerido.")]
-        public string Name { get; set; }
-
-        [Display(Name = "Valor")]
-        [Required(ErrorMessage = "O sobrenome é requerido.")]
-        public double Valor { get; set; }       
+        public string Name { get; set; }        
 
         [Display(Name = "Ativo")]
         public bool Ative { get; set; }
