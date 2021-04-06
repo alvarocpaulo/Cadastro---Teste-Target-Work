@@ -28,9 +28,13 @@ namespace Cadastro
             services.AddDbContext<RegisterContext>(c =>
                 c.UseInMemoryDatabase("Register"));
 
+            services.AddDbContext<RegisterContext>(c =>
+                c.UseInMemoryDatabase("Products"));
+
             services.AddControllersWithViews();
         }
 
+        
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
         {
