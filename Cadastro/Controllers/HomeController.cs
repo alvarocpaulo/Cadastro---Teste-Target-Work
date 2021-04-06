@@ -26,7 +26,7 @@ namespace Cadastro.Controllers
             return View();
         }
 
-        public IActionResult Produtos()
+        public IActionResult Products()
         {
             return View();
         }
